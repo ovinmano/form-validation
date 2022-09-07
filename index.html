@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Login Page</h3>
+    <div class="container">
+        <form action="message.html" name="formEl" method="POST" class="formEl">
+            <div>
+                <br>
+                <input type="text" class="fName" name="fName" placeholder="First name">
+                <p class="p1"></p>
+            </div>
+            <div>
+                <input type="text" class="lName" name="lName" placeholder="Last name">
+                <p class="p2"></p>
+            </div>
+            <div class="d-flex" id="radio">
+                
+                <div class="d-flex">
+                    <input type="radio" class="public" name="radioBtn" value="public" id="public">public</input>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" class="private" name="radioBtn" value="private" id="private">private</input>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" class="personal" name="radioBtn" value="personal" id="personal">personal</input>
+                </div>
+                <p class="p5"></p>
+            </div>
+            <br>
+            <div>
+                <input type="password" class="pass" name="pass" placeholder="password">
+                <p class="p4"></p>
+            </div>
+            <div>
+                <input type="email" class="mail" name="email" placeholder="email@.com">
+                <p class="p3"></p>
+            </div>
+           
+            <div>
+                <label id="gen">Gender</label>
+                <select name="gender" class="gen">
+                    <option value="select a gender">--select--</option>
+                    <option value="male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="others">others</option>
+                    <p class="p6"></p>
+                </select>
+            </div>
+            <div>
+                <label for="terms">
+                    <input type="checkbox" class="terms" />
+                    I accept terms and conditions.
+                    <p class="p7"></p>
+                </label>
+            </div>
+            <div>
+                <a href="message.html"><button value="submit" type="submit" id="btn"
+                        onclick="return validate()">Login</a>
+                </button>
+            </div>
+            <br>
+        </form>
+    </div>
+    <br>
+
+</body>
+<script src="login.js"></script>
+
+</html>

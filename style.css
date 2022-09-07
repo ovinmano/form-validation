@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    background-color: rgb(13, 194, 194);
+    text-align: center;
+    padding: 20px;
+    box-shadow: #000 0px 0px 5px 3px;
+}
+.container{
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    width: 40%;
+    border: 1px solid rgb(13, 194, 194);
+    border-radius: 10px;
+    background:rgb(13, 194, 194);
+}
+form *{
+    margin: 8px;
+    width: 90%;
+}
+form input{
+    cursor: pointer;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+select{
+    padding:2px 10px ;
+}
+option{
+    border: none;
+    outline: none; 
+}
+button,a{
+    width: 30%;
+    background: royalblue;
+    color: rgb(12, 4, 4);
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* a{
+    color: #000;
+    text-decoration: none;
+} */
+form label{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    user-select: none;
+}
+form label input,
+form input[type='radio']{
+    width: auto;
+}
+.d-flex{
+    display:flex;
+}
+#gen{
+    margin-left: 19px;
+}
+:placeholder-shown{
+    font-size: 12px;
+}
+p{
+    color: red;
+    font-weight: bold;
+}
+.p5{
+    display: flex;
+    padding-bottom: 10px;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+@media(max-width:980px) {
+    h3{
+        background-color: rgb(13, 194, 194);
+        text-align: center;
+        padding: 50px;
+        box-shadow: #000 0px 0px 9px 7px;
+    }
+    .container{
+        margin: auto;
+        margin-top: 10rem;
+        text-align: center;
+        position: relative;
+        width: 60%;
+        min-height: auto;
+        border: 1px solid rgb(13, 194, 194);
+        border-radius: 10px;
+        background:rgb(13, 194, 194);
+    }
+    form *{
+        margin: 20px;
+        width: 90%;
+    }
+    form input{
+        cursor: pointer;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    select{
+        padding:5px 15px ;
+    }
+    option{
+        border: none;
+        outline: none; 
+    }
+    button{
+        width: 30%;
+        padding: 10px;
+        background: royalblue;
+        color: rgb(12, 4, 4);
+        border: none;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* a{
+        color: #000;
+        text-decoration: none;
+    } */
+    form label{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+        user-select: none;
+    }
+    form label input,
+    form input[type='radio']{
+        height: auto;
+        width: auto;
+    }
+    .d-flex{
+        display:flex;
+    }
+    #gen{
+        margin-left: 25px;
+    }
+    .gen{
+        padding: 9px;
+    }
+    :placeholder-shown{
+        font-size: 18px;
+    }
+    p{
+        color: red;
+        font-weight: bold;
+    }
+    .p5{
+        display: flex;
+        padding-bottom: 10px;
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+    
+    
+}

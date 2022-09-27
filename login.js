@@ -61,6 +61,37 @@ function validate() {
         document.querySelector('.p5').innerHTML = '*SELECT ANY ONE*';
         return false
     }
+    //------------------address error msg
+
+    const addressEl = document.getElementById('address').value;
+    if (addressEl == "") {
+        document.getElementById('add').innerHTML = "*FILLING YOUR ADDRESS*";
+        return false;
+    }
+    if (addressEl.length < 20) {
+        document.getElementById('add').innerHTML = "*ADDRESS MUST BEEN 20 CHARACTERS*";
+        return false;
+    }
+//----------------------phone number
+
+    const phno = document.getElementById('mobileNumber').value;
+    if (phno == "") {
+        document.getElementById('msg').innerHTML = "*FILL YOUR MOBILE NUMBER*";
+        return false;
+    }
+    if (isNaN(phno)) {
+        document.getElementById('msg').innerHTML = "*ENTER ONLY NUMBERS*";
+        return false;
+    }
+    if (phno.length < 10) {
+        document.getElementById('msg').innerHTML = "*NUMBER MUST BEEN 10 DIGITS*";
+        return false;
+    }
+    if (phno.length > 10) {
+        document.getElementById('msg').innerHTML = "*NUMBER MUST BEEN 10 DIGITS*";
+        return false;
+    }
+//----------------------password
     const pass = document.querySelector('.pass');
     if (pass.value == "") {
         document.querySelector('.p4').innerHTML = '*FILL THE PASSWORD 9 CHARACTERS*';
@@ -99,12 +130,3 @@ function validate() {
     
 }
 
-    
-// const gender=document.querySelectorAll('.gen');
-    
-// if (gender==''){
-//   document.querySelector('.p6').innerHTML = '*select gender*';
-//   gender.focus();
-//   gender.style.border = '2px solid red';
-//   return false;
-// }
